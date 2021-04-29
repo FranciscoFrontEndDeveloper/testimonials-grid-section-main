@@ -1,14 +1,23 @@
+//<!-- '[styles mobile start]' -->
 .Main
- background: lime
+ background: #fff
  width: 100%
  height: 100vh
  display: grid
  grid-template-columns: 1fr
  grid-template-rows: 1fr auto
+ align-items: center
 .containerMain
  display: grid
  grid-template-columns: repeat(12,1fr )
- grid-template-rows: repeat(12, 1fr )
+ grid-template-rows: repeat(auto-fill, minmax(auto, 1fr) )
+ row-gap: 15px
+ width: 100%
+ height: 90%
+ div
+  border-radius: 5px
+  grid-column: 1/13
+//<!-- '[styles mobile end]' -->
 
 
 
