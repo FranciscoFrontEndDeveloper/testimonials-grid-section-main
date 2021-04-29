@@ -7,18 +7,44 @@
  grid-template-columns: 1fr
  grid-template-rows: 1fr auto
  align-items: center
+ justify-items: center
 .containerMain
  display: grid
  grid-template-columns: repeat(12,1fr )
  grid-template-rows: repeat(auto-fill, minmax(auto, 1fr) )
  row-gap: 15px
- width: 100%
+ width: 96%
  height: 90%
  div
   border-radius: 5px
   grid-column: 1/13
+  border: 1px solid red
+ div:nth-child(1)
+   background: hsl(263, 55%, 52%)
+ div:nth-child(2)
+   background: hsl(217, 19%, 35%)
+ div:nth-child(3)
+   background: hsl(0, 0%, 100%)
+ div:nth-child(4)
+   background: hsl(219, 29%, 14%)
+ div:nth-child(5)
+   background: hsl(0, 0%, 100%)
 //<!-- '[styles mobile end]' -->
-
+//<!-- '[style grid tablet start]' -->
+@media screen and ( min-width: 768px ) and ( max-width: 1024px)
+  .containerMain
+    column-gap: 20px
+    div:nth-child(1)
+      grid-column: 1/8
+    div:nth-child(2)
+      grid-column: 8/13
+    div:nth-child(3)
+      grid-column: 1/6
+    div:nth-child(4)
+      grid-column: 6/13
+    div:nth-child(5)
+      grid-column: 1/8
+//<!-- '[style grid tablet end]' -->
 
 
 
