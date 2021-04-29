@@ -1,0 +1,33 @@
+.Main {
+  background: lime;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.containerMain {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.containerFooter {
+  display: grid;
+  justify-items: center;
+  background: #000;
+  width: 100%;
+}
+.containerFooter p {
+  color: #fff;
+  text-align: center;
+}
+.containerFooter a {
+  color: #FF3F00;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.containerFooter a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
