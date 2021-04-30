@@ -17,10 +17,10 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+  grid-template-rows: 1fr;
   row-gap: 15px;
   width: 96%;
-  height: 90%;
+  height: 100%;
   background: #cfcfcf;
 }
 .containerMain .containerCard {
@@ -51,7 +51,7 @@ body {
   grid-column: 2/3;
 }
 .containerMain .containerCard .containerCard__head p {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .containerMain .containerCard h3, .containerMain .containerCard p {
   grid-column: 1/3;
@@ -62,10 +62,10 @@ body {
 }
 .containerMain .containerCard p {
   color: #AD88E5;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 .containerMain .containerCard h3 {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 600;
 }
 .containerMain .containerCard:nth-child(1) {
@@ -121,9 +121,11 @@ body {
 }
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .containerMain {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     column-gap: 20px;
+    padding: 10px;
+    grid-template-rows: repeat(2, 1fr);
   }
   .containerMain div:nth-child(1) {
     grid-column: 1/7;
